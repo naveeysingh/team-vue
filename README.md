@@ -40,10 +40,6 @@ The project consists of three main files:
  
    Then, navigate to `http://localhost:8000` in your web browser.
 
-## Customization
-
-Feel free to modify the code and styles to suit your needs. You can integrate this app with a backend for persistent storage or enhance it with additional features as needed.
-
 ## Dependencies
 
 - [Vue.js 3](https://vuejs.org/) - The app uses Vue.js 3 via CDN.
