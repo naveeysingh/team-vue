@@ -29,7 +29,7 @@ The project consists of three main files:
 
 2. **Navigate to the Project Directory:**
    ```bash
-   cd vue-notes-app
+   cd tema-vue
    ```
 
 3. **Open the `index.html` File:**
