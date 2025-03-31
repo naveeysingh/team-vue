@@ -1,0 +1,123 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f7f8;
+    color: #333;
+    line-height: 1.6;
+  }
+  
+  header {
+    background-color: #6c63ff;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  header h1 {
+    margin-bottom: 10px;
+    font-size: 2em;
+  }
+  
+  main {
+    padding: 20px;
+    max-width: 800px;
+    margin: 20px auto 80px; 
+  }
+  
+  .note-form form {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    margin-bottom: 30px;
+  }
+  
+  .note-form input[type="text"],
+  .note-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 2px solid #ddd;
+    border-radius: 4px;
+    font-size: 1em;
+  }
+  
+  .note-form button {
+    background-color: #6c63ff;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .note-form button:hover {
+    background-color: #5753d1;
+  }
+  
+
+  .notes-list .note {
+    background: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-left: 5px solid #6c63ff;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  }
+  
+  .notes-list .note h2 {
+    margin-bottom: 10px;
+    color: #6c63ff;
+  }
+  
+  .notes-list .note p {
+    margin-bottom: 15px;
+  }
+  
+  .editing input[type="text"],
+  .editing textarea {
+    border-color: #6c63ff;
+  }
+  
+  /* Buttons in notes */
+  .edit-btn, .delete-btn {
+    background-color: #6c63ff;
+    color: #fff;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-right: 10px;
+  }
+  
+  .delete-btn {
+    background-color: #e74c3c;
+  }
+  
+  .edit-btn:hover {
+    background-color: #5753d1;
+  }
+  
+  .delete-btn:hover {
+    background-color: #c0392b;
+  }
+  
+  /* Footer styles */
+  footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #333;
+    color: #fff;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
+  

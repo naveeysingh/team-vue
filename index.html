@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Vue Notes App</title>
+  <!-- Include Vue 3 from CDN -->
+  <script src="https://unpkg.com/vue@3"></script>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Welcome to the Vue Notes App</h1>
+    <p>Create, edit, and manage your notes with ease.</p>
+  </header>
+  
+  <main id="app">
+    <section class="note-form">
+      <!-- Form to create a new note -->
+      <form @submit.prevent="addNote">
+        <input type="text" v-model="newNoteTitle" placeholder="Note Title" required />
+        <textarea v-model="newNoteContent" placeholder="Note Content" required></textarea>
+        <button type="submit">Add Note</button>
+      </form>
+    </section>
+    
+    <section class="notes-list">
+      <!-- Display the list of notes -->
+      <div v-for="(note, index) in notes" :key="note.id" class="note">
+        <!-- Edit mode -->
+        <div v-if="note.editing" class="editing">
+          <input type="text" v-model="note.title" />
+          <textarea v-model="note.content"></textarea>
+          <button @click="updateNote(note)">Update</button>
+          <button @click="cancelEdit(note)">Cancel</button>
+        </div>
+        <!-- Display mode -->
+        <div v-else>
+          <h2>{{ note.title }}</h2>
+          <p>{{ note.content }}</p>
+          <button class="edit-btn" @click="editNote(note)">Edit</button>
+          <button class="delete-btn" @click="deleteNote(index)">Delete</button>
+        </div>
+      </div>
+    </section>
+  </main>
+  
+  <footer>
+    <p>© 2025 Your Company. All rights reserved.</p>
+  </footer>
+  
+  <script src="script.js"></script>
+</body>
+</html>
