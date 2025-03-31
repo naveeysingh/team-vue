@@ -1,5 +1,3 @@
-Below is a sample `README.md` file for your Vue Notes App:
-
 ```markdown
 # Vue Notes App
 
